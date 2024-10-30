@@ -1,0 +1,107 @@
+.contenedor{
+    display: grid;
+    grid-template-areas: "header header"
+                          "main main"
+                          "main main";
+    
+    grid-template-rows: 0.1fr 1fr;
+    height:100vh;
+}
+
+/*body{
+    background-image: url(/assets/logo\ empresa.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}*/
+
+.barra_negra{
+    background: white;
+    display: flex;
+    justify-content: space-between; /*separa el contenido y pone uno en cada esquina*/
+}
+
+
+header{
+    grid-area: header;
+    background: aqua;
+}
+
+.nav{
+    gap: 40px;
+}
+
+main{
+    grid-area: main;
+   background-image: url(/assets/logo\ empresa.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    padding: 35px;  
+}
+
+.panel_control{
+    background: red;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.iconos{
+    background: white;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    
+}
+
+#icontex{
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+}
+
+.panel_general{
+display: none;
+}
+
+#img_empleados{
+    color:white;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#igm_clientes{
+    color:white;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#igm_proveedores{
+    color:white;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#igm_productos{
+    color:white;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#igm_ventas{
+    color:white;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+}
+
